@@ -1,0 +1,42 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import <Crashlytics/Crashlytics.h>
+
+#import "Constants/EADefines.h"
+#import "Model/EAModel.h"
+#import "Constants/EAConstants.h"
+//#import "Utils/EALog.h"
+#import "Settings/Template.h"
+#import "Managers/EAFontManager.h"
+#import "Managers/EAResourceManager.h"
+#import "Analytics/EAAnalytics.h"
+#import "Logging/EALogs.h"
+#import "UIView+FLKAutoLayout.h"
+
+/*
+ * Utils
+ */
+#import "Utils/UIColor+EAAddition.h"
+#import "Utils/UIAlertView+AutoDismissWithBlocks.h"
+
+/*
+ * Basic classes used over all application
+ */
+#import "Controllers/Navigation/EAViewController.h"
+#import "Controllers/Navigation/EATableViewController.h"
+#import "Controllers/Navigation/EANavigationController.h"
