@@ -1034,7 +1034,6 @@
 				CODE_SIGN_ENTITLEMENTS = "Template/Entitlements-Production.plist";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CRASHLYTICS_API_KEY = f70a373c1fd4603a71ef861ec7ccc2b82284af1e;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1129,7 +1128,6 @@
 				CODE_SIGN_ENTITLEMENTS = "Template/Entitlements-Development.plist";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CRASHLYTICS_API_KEY = f70a373c1fd4603a71ef861ec7ccc2b82284af1e;
 				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Template/Frameworks\"",
@@ -1191,7 +1189,6 @@
 				CODE_SIGN_ENTITLEMENTS = "Template/Entitlements-Production.plist";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CRASHLYTICS_API_KEY = f70a373c1fd4603a71ef861ec7ccc2b82284af1e;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
