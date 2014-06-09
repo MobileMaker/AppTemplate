@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EALogger.h"
+#import "EABaseLevelMessageLogger.h"
+#import "Interfaces/EAErrorLogger.h"
 
-@interface EACrashlyticsLogger : NSObject<EALogger>
+/** Logger acts as crashreporter */
+@interface EACrashlyticsLogger : EABaseLevelMessageLogger<EAErrorLogger>
 
--(instancetype)initWithParameters:(NSDictionary*)params;
+/** Get logger shared instance */
++(instancetype)shared;
+
+/** Initialize instance and start logging
+ @warning Logger can be initialized only once
+ @param logLevel            Logging level
+ @param params              Additional logger params to bind to
+ @return Logger instance
+ */
++(instancetype)startWithLogLevel:(EALogLevel)logLevel parameters:(NSDictionary*)params;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  EATestFlightLogger.h
+//  EAGoogleAnalyticsLogger.h
 //  Template
 //
 //  Created by Maker on 01/06/14.
@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EABaseLevelMessageLogger.h"
+#import "EALevelLogger.h"
 #import "Interfaces/EAErrorLogger.h"
+#import "Interfaces/EAEventLogger.h"
 
-@interface EATestFlightLogger : EABaseLevelMessageLogger<EAErrorLogger>
+@interface EAGoogleAnalyticsLogger : EALevelLogger<EAEventLogger, EAErrorLogger, EAMessageLogger>
 
 /** Get logger shared instance */
 +(instancetype)shared;

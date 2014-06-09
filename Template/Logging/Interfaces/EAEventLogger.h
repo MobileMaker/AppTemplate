@@ -1,5 +1,5 @@
 //
-//  EAAnalytics.h
+//  EAEventTracker.h
 //  Template
 //
 //  Created by Maker on 01/06/14.
@@ -7,23 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EAAnalyticsConstants.h"
 
-
-@protocol EAAnalyticsTracker <NSObject>
-
-@required
-
-/** Get tracker name */
--(NSString*)trackerName;
+/** Events logger protocol. Events have no logging level and go directly to event loggers */
+@protocol EAEventLogger <NSObject>
 
 @optional
 
-/** Bind parameters to tracker to distinguish users */
--(void)bindParametersToTracker:(NSDictionary*)params;
-
-/** Set active screen name for all events */
--(void)setScreenName:(NSString*)screenName;
+/** Manage logging screen for instance */
+-(void)logScreen:(NSString*)screenName;
 
 /** Log event
  @param event       Event name
@@ -43,19 +34,20 @@
  @ @param params    Event addtitional params. Should update previous set event params, but depends on tracker
  */
 -(void)endTimedEvent:(NSString*)event withParameters:(NSDictionary*)params;
-/** Log error
- @param errorDescr  Error description
- @param message     Error message
- @param exception   Error exception
- @param params      Error addtitional params
+
+
+/**
+ * Track when a user has passed a checkpoint. If is not supported by logger then simulated as log message with EALogLevelInfo
+ * @param checkpointName The name of the checkpoint, this should be a static string
  */
--(void)logError:(NSString*)errorDescr message:(NSString*)message exception:(NSException*)exception withParameters:(NSDictionary*)params;
-/** Log error
- @param errorDescr  Error description
- @param message     Error message
- @param error       Error
- @param params      Error addtitional params
+-(void)passCheckpoint:(NSString*)checkpointName;
+
+/**
+ * Submits custom feedback to the site. Sends the data in feedback to the site. This is to be used as the method to submit
+ * If is not supported by logger then simulated as log message with EALogLevelInfo
+ * feedback from custom feedback forms.
+ * @param feedback Your users feedback, method does nothing if feedback is nil
  */
--(void)logError:(NSString*)errorDescr message:(NSString*)message error:(NSError*)error withParameters:(NSDictionary*)params;
+-(void)submitFeedback:(NSString*)feedback;
 
 @end

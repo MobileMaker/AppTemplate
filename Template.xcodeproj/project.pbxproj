@@ -27,16 +27,26 @@
 		185B5451192CC01F00F0AF29 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 185B544F192CC01F00F0AF29 /* Settings.bundle */; };
 		1860EDF8193E8CEC006FDC9E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860EDF7193E8CEC006FDC9E /* Crashlytics.framework */; };
 		1860EDF9193E8CEC006FDC9E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860EDF7193E8CEC006FDC9E /* Crashlytics.framework */; };
-		1860EE06193E8D6C006FDC9E /* EACrashlyticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EDFC193E8D6C006FDC9E /* EACrashlyticsLogger.m */; };
-		1860EE07193E8D6C006FDC9E /* EACrashlyticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EDFC193E8D6C006FDC9E /* EACrashlyticsLogger.m */; };
-		1860EE08193E8D6C006FDC9E /* EADefaultLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EDFE193E8D6C006FDC9E /* EADefaultLogger.m */; };
-		1860EE09193E8D6C006FDC9E /* EADefaultLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EDFE193E8D6C006FDC9E /* EADefaultLogger.m */; };
-		1860EE0A193E8D6C006FDC9E /* EALogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EE01193E8D6C006FDC9E /* EALogs.m */; };
-		1860EE0B193E8D6C006FDC9E /* EALogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EE01193E8D6C006FDC9E /* EALogs.m */; };
-		1860EE0C193E8D6C006FDC9E /* EALogsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EE03193E8D6C006FDC9E /* EALogsConstants.m */; };
-		1860EE0D193E8D6C006FDC9E /* EALogsConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EE03193E8D6C006FDC9E /* EALogsConstants.m */; };
-		1860EE12193EA137006FDC9E /* EATestFlightLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EE11193EA137006FDC9E /* EATestFlightLogger.m */; };
-		1860EE13193EA137006FDC9E /* EATestFlightLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860EE11193EA137006FDC9E /* EATestFlightLogger.m */; };
+		187A82671945F84600C28C57 /* EAAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A824F1945F84500C28C57 /* EAAnalytics.m */; };
+		187A82681945F84600C28C57 /* EAAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A824F1945F84500C28C57 /* EAAnalytics.m */; };
+		187A82691945F84600C28C57 /* EABaseLevelMessageLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82511945F84500C28C57 /* EABaseLevelMessageLogger.m */; };
+		187A826A1945F84600C28C57 /* EABaseLevelMessageLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82511945F84500C28C57 /* EABaseLevelMessageLogger.m */; };
+		187A826B1945F84600C28C57 /* EACrashlyticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82531945F84500C28C57 /* EACrashlyticsLogger.m */; };
+		187A826C1945F84600C28C57 /* EACrashlyticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82531945F84500C28C57 /* EACrashlyticsLogger.m */; };
+		187A826D1945F84600C28C57 /* EADefaultLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82551945F84600C28C57 /* EADefaultLogger.m */; };
+		187A826E1945F84600C28C57 /* EADefaultLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82551945F84600C28C57 /* EADefaultLogger.m */; };
+		187A826F1945F84600C28C57 /* EAFlurryAnalyticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82571945F84600C28C57 /* EAFlurryAnalyticsLogger.m */; };
+		187A82701945F84600C28C57 /* EAFlurryAnalyticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82571945F84600C28C57 /* EAFlurryAnalyticsLogger.m */; };
+		187A82711945F84600C28C57 /* EAGoogleAnalyticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82591945F84600C28C57 /* EAGoogleAnalyticsLogger.m */; };
+		187A82721945F84600C28C57 /* EAGoogleAnalyticsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82591945F84600C28C57 /* EAGoogleAnalyticsLogger.m */; };
+		187A82731945F84600C28C57 /* EALevelLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A825B1945F84600C28C57 /* EALevelLogger.m */; };
+		187A82741945F84600C28C57 /* EALevelLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A825B1945F84600C28C57 /* EALevelLogger.m */; };
+		187A82751945F84600C28C57 /* EALoggingConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A825D1945F84600C28C57 /* EALoggingConstants.m */; };
+		187A82761945F84600C28C57 /* EALoggingConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A825D1945F84600C28C57 /* EALoggingConstants.m */; };
+		187A82771945F84600C28C57 /* EALogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A825F1945F84600C28C57 /* EALogs.m */; };
+		187A82781945F84600C28C57 /* EALogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A825F1945F84600C28C57 /* EALogs.m */; };
+		187A82791945F84600C28C57 /* EATestFlightLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82611945F84600C28C57 /* EATestFlightLogger.m */; };
+		187A827A1945F84600C28C57 /* EATestFlightLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 187A82611945F84600C28C57 /* EATestFlightLogger.m */; };
 		187CE38E19199F3B0067143F /* EADeepLinking.m in Sources */ = {isa = PBXBuildFile; fileRef = 187CE38D19199F3B0067143F /* EADeepLinking.m */; };
 		187CE39C1919A2E40067143F /* UIAlertView+AutoDismissWithBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 187CE3911919A2E40067143F /* UIAlertView+AutoDismissWithBlocks.m */; };
 		187CE39E1919A2E40067143F /* NSString+EAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 187CE3931919A2E40067143F /* NSString+EAAdditions.m */; };
@@ -149,17 +159,30 @@
 		185B544D192CC01F00F0AF29 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		185B544F192CC01F00F0AF29 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1860EDF7193E8CEC006FDC9E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Template/Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
-		1860EDFB193E8D6C006FDC9E /* EACrashlyticsLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EACrashlyticsLogger.h; sourceTree = "<group>"; };
-		1860EDFC193E8D6C006FDC9E /* EACrashlyticsLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EACrashlyticsLogger.m; sourceTree = "<group>"; };
-		1860EDFD193E8D6C006FDC9E /* EADefaultLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EADefaultLogger.h; sourceTree = "<group>"; };
-		1860EDFE193E8D6C006FDC9E /* EADefaultLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EADefaultLogger.m; sourceTree = "<group>"; };
-		1860EDFF193E8D6C006FDC9E /* EALogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALogger.h; sourceTree = "<group>"; };
-		1860EE00193E8D6C006FDC9E /* EALogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALogs.h; sourceTree = "<group>"; };
-		1860EE01193E8D6C006FDC9E /* EALogs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EALogs.m; sourceTree = "<group>"; };
-		1860EE02193E8D6C006FDC9E /* EALogsConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALogsConstants.h; sourceTree = "<group>"; };
-		1860EE03193E8D6C006FDC9E /* EALogsConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EALogsConstants.m; sourceTree = "<group>"; };
-		1860EE10193EA137006FDC9E /* EATestFlightLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EATestFlightLogger.h; sourceTree = "<group>"; };
-		1860EE11193EA137006FDC9E /* EATestFlightLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EATestFlightLogger.m; sourceTree = "<group>"; };
+		187A824E1945F84500C28C57 /* EAAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAAnalytics.h; sourceTree = "<group>"; };
+		187A824F1945F84500C28C57 /* EAAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAAnalytics.m; sourceTree = "<group>"; };
+		187A82501945F84500C28C57 /* EABaseLevelMessageLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EABaseLevelMessageLogger.h; sourceTree = "<group>"; };
+		187A82511945F84500C28C57 /* EABaseLevelMessageLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EABaseLevelMessageLogger.m; sourceTree = "<group>"; };
+		187A82521945F84500C28C57 /* EACrashlyticsLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EACrashlyticsLogger.h; sourceTree = "<group>"; };
+		187A82531945F84500C28C57 /* EACrashlyticsLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EACrashlyticsLogger.m; sourceTree = "<group>"; };
+		187A82541945F84500C28C57 /* EADefaultLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EADefaultLogger.h; sourceTree = "<group>"; };
+		187A82551945F84600C28C57 /* EADefaultLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EADefaultLogger.m; sourceTree = "<group>"; };
+		187A82561945F84600C28C57 /* EAFlurryAnalyticsLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAFlurryAnalyticsLogger.h; sourceTree = "<group>"; };
+		187A82571945F84600C28C57 /* EAFlurryAnalyticsLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAFlurryAnalyticsLogger.m; sourceTree = "<group>"; };
+		187A82581945F84600C28C57 /* EAGoogleAnalyticsLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGoogleAnalyticsLogger.h; sourceTree = "<group>"; };
+		187A82591945F84600C28C57 /* EAGoogleAnalyticsLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGoogleAnalyticsLogger.m; sourceTree = "<group>"; };
+		187A825A1945F84600C28C57 /* EALevelLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALevelLogger.h; sourceTree = "<group>"; };
+		187A825B1945F84600C28C57 /* EALevelLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EALevelLogger.m; sourceTree = "<group>"; };
+		187A825C1945F84600C28C57 /* EALoggingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALoggingConstants.h; sourceTree = "<group>"; };
+		187A825D1945F84600C28C57 /* EALoggingConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EALoggingConstants.m; sourceTree = "<group>"; };
+		187A825E1945F84600C28C57 /* EALogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALogs.h; sourceTree = "<group>"; };
+		187A825F1945F84600C28C57 /* EALogs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EALogs.m; sourceTree = "<group>"; };
+		187A82601945F84600C28C57 /* EATestFlightLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EATestFlightLogger.h; sourceTree = "<group>"; };
+		187A82611945F84600C28C57 /* EATestFlightLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EATestFlightLogger.m; sourceTree = "<group>"; };
+		187A82631945F84600C28C57 /* EAErrorLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAErrorLogger.h; sourceTree = "<group>"; };
+		187A82641945F84600C28C57 /* EAEventLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAEventLogger.h; sourceTree = "<group>"; };
+		187A82651945F84600C28C57 /* EALogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EALogger.h; sourceTree = "<group>"; };
+		187A82661945F84600C28C57 /* EAMessageLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAMessageLogger.h; sourceTree = "<group>"; };
 		187CE38C19199F3B0067143F /* EADeepLinking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EADeepLinking.h; sourceTree = "<group>"; };
 		187CE38D19199F3B0067143F /* EADeepLinking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EADeepLinking.m; sourceTree = "<group>"; };
 		187CE3901919A2E40067143F /* UIAlertView+AutoDismissWithBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AutoDismissWithBlocks.h"; sourceTree = "<group>"; };
@@ -318,22 +341,43 @@
 			path = AppStore;
 			sourceTree = "<group>";
 		};
-		1860EDFA193E8D6C006FDC9E /* Logging */ = {
+		187A824D1945F84500C28C57 /* Logging */ = {
 			isa = PBXGroup;
 			children = (
-				1860EDFB193E8D6C006FDC9E /* EACrashlyticsLogger.h */,
-				1860EDFC193E8D6C006FDC9E /* EACrashlyticsLogger.m */,
-				1860EDFD193E8D6C006FDC9E /* EADefaultLogger.h */,
-				1860EDFE193E8D6C006FDC9E /* EADefaultLogger.m */,
-				1860EDFF193E8D6C006FDC9E /* EALogger.h */,
-				1860EE00193E8D6C006FDC9E /* EALogs.h */,
-				1860EE01193E8D6C006FDC9E /* EALogs.m */,
-				1860EE02193E8D6C006FDC9E /* EALogsConstants.h */,
-				1860EE03193E8D6C006FDC9E /* EALogsConstants.m */,
-				1860EE10193EA137006FDC9E /* EATestFlightLogger.h */,
-				1860EE11193EA137006FDC9E /* EATestFlightLogger.m */,
+				187A824E1945F84500C28C57 /* EAAnalytics.h */,
+				187A824F1945F84500C28C57 /* EAAnalytics.m */,
+				187A82501945F84500C28C57 /* EABaseLevelMessageLogger.h */,
+				187A82511945F84500C28C57 /* EABaseLevelMessageLogger.m */,
+				187A82521945F84500C28C57 /* EACrashlyticsLogger.h */,
+				187A82531945F84500C28C57 /* EACrashlyticsLogger.m */,
+				187A82541945F84500C28C57 /* EADefaultLogger.h */,
+				187A82551945F84600C28C57 /* EADefaultLogger.m */,
+				187A82561945F84600C28C57 /* EAFlurryAnalyticsLogger.h */,
+				187A82571945F84600C28C57 /* EAFlurryAnalyticsLogger.m */,
+				187A82581945F84600C28C57 /* EAGoogleAnalyticsLogger.h */,
+				187A82591945F84600C28C57 /* EAGoogleAnalyticsLogger.m */,
+				187A825A1945F84600C28C57 /* EALevelLogger.h */,
+				187A825B1945F84600C28C57 /* EALevelLogger.m */,
+				187A825C1945F84600C28C57 /* EALoggingConstants.h */,
+				187A825D1945F84600C28C57 /* EALoggingConstants.m */,
+				187A825E1945F84600C28C57 /* EALogs.h */,
+				187A825F1945F84600C28C57 /* EALogs.m */,
+				187A82601945F84600C28C57 /* EATestFlightLogger.h */,
+				187A82611945F84600C28C57 /* EATestFlightLogger.m */,
+				187A82621945F84600C28C57 /* Interfaces */,
 			);
 			path = Logging;
+			sourceTree = "<group>";
+		};
+		187A82621945F84600C28C57 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				187A82631945F84600C28C57 /* EAErrorLogger.h */,
+				187A82641945F84600C28C57 /* EAEventLogger.h */,
+				187A82651945F84600C28C57 /* EALogger.h */,
+				187A82661945F84600C28C57 /* EAMessageLogger.h */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		18C5CB2B192E4CE60027FAF0 /* Account */ = {
@@ -385,7 +429,7 @@
 		18D2461B18AD7B7700F95FDD /* Template */ = {
 			isa = PBXGroup;
 			children = (
-				1860EDFA193E8D6C006FDC9E /* Logging */,
+				187A824D1945F84500C28C57 /* Logging */,
 				7BBF985D193CBA4D0016C5A4 /* Analytics */,
 				7B77263318AE66CA00DBA598 /* Controllers */,
 				7B77265F18AE671F00DBA598 /* Protocols */,
@@ -899,31 +943,34 @@
 				187CE3A21919A2E40067143F /* NSObject+EACancelableScheduledBlock.m in Sources */,
 				7B7726AE18AE6C6900DBA598 /* EAMainViewController.m in Sources */,
 				18C5CB2E192E4CE60027FAF0 /* EALoginViewController.m in Sources */,
+				187A826F1945F84600C28C57 /* EAFlurryAnalyticsLogger.m in Sources */,
 				187CE39C1919A2E40067143F /* UIAlertView+AutoDismissWithBlocks.m in Sources */,
-				1860EE08193E8D6C006FDC9E /* EADefaultLogger.m in Sources */,
 				187CE3A41919A2E40067143F /* NSDate+Utilities.m in Sources */,
 				7B77265318AE670A00DBA598 /* EAAppDelegate+ConfigureServices.m in Sources */,
 				18E97F03192C1F9500C3DF3E /* UIAlertView+Blocks.m in Sources */,
-				1860EE12193EA137006FDC9E /* EATestFlightLogger.m in Sources */,
 				18C5CB42192E54C70027FAF0 /* EATitleValueCell.m in Sources */,
 				187CE38E19199F3B0067143F /* EADeepLinking.m in Sources */,
+				187A82791945F84600C28C57 /* EATestFlightLogger.m in Sources */,
 				7B77265D18AE671900DBA598 /* EAResponseEntity.m in Sources */,
+				187A82771945F84600C28C57 /* EALogs.m in Sources */,
+				187A82711945F84600C28C57 /* EAGoogleAnalyticsLogger.m in Sources */,
 				7B77265E18AE671900DBA598 /* EAMappingsManager.m in Sources */,
+				187A82671945F84600C28C57 /* EAAnalytics.m in Sources */,
 				7BBF986B193CBA4D0016C5A4 /* EAFlurryAnalytics.m in Sources */,
-				1860EE06193E8D6C006FDC9E /* EACrashlyticsLogger.m in Sources */,
 				18A1E0AC193B3B9800724097 /* EALoginView.m in Sources */,
 				185B5447192CAE0400F0AF29 /* EAConstants.m in Sources */,
-				1860EE0C193E8D6C006FDC9E /* EALogsConstants.m in Sources */,
 				7B7726AB18AE673400DBA598 /* EAUtils.m in Sources */,
 				187CE3A61919A2E40067143F /* NSArray+UITextField.m in Sources */,
 				7B77263D18AE66CA00DBA598 /* EANavigationController.m in Sources */,
 				7B77263F18AE66CA00DBA598 /* EAViewController.m in Sources */,
+				187A82691945F84600C28C57 /* EABaseLevelMessageLogger.m in Sources */,
 				18D2462618AD7B7700F95FDD /* EAAppDelegate.m in Sources */,
 				187CE3A01919A2E40067143F /* UIColor+EAAddition.m in Sources */,
 				18D2462218AD7B7700F95FDD /* main.m in Sources */,
 				187CE39E1919A2E40067143F /* NSString+EAAdditions.m in Sources */,
 				18FC14F4192CEB6A003E2265 /* EABookingMainViewController.m in Sources */,
 				7BBF986D193CBA4D0016C5A4 /* EAGoogleAnalytics.m in Sources */,
+				187A82751945F84600C28C57 /* EALoggingConstants.m in Sources */,
 				7B77266B18AE671F00DBA598 /* EAProtocolUtils.m in Sources */,
 				7B7726A818AE673400DBA598 /* EAPair.m in Sources */,
 				7BBF985C193CBA410016C5A4 /* EAFontManager.m in Sources */,
@@ -931,11 +978,13 @@
 				7B7726AA18AE673400DBA598 /* EAUIUtils.m in Sources */,
 				18FC14F9192CEC15003E2265 /* EAFloorMainViewController.m in Sources */,
 				7BBF9867193CBA4D0016C5A4 /* EAAnalytics.m in Sources */,
+				187A82731945F84600C28C57 /* EALevelLogger.m in Sources */,
 				7B77266A18AE671F00DBA598 /* EAProtocolConstants.m in Sources */,
+				187A826B1945F84600C28C57 /* EACrashlyticsLogger.m in Sources */,
 				7B77269D18AE672F00DBA598 /* Template.m in Sources */,
-				1860EE0A193E8D6C006FDC9E /* EALogs.m in Sources */,
 				7B77263E18AE66CA00DBA598 /* EATableViewController.m in Sources */,
 				7B77264A18AE66F600DBA598 /* EAResourceManager.m in Sources */,
+				187A826D1945F84600C28C57 /* EADefaultLogger.m in Sources */,
 				18FC14FE192CEC7B003E2265 /* EABookMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -950,31 +999,34 @@
 				18FC14A6192CE048003E2265 /* NSObject+EACancelableScheduledBlock.m in Sources */,
 				18FC14A9192CE048003E2265 /* EAMainViewController.m in Sources */,
 				18C5CB2F192E4CE60027FAF0 /* EALoginViewController.m in Sources */,
+				187A82701945F84600C28C57 /* EAFlurryAnalyticsLogger.m in Sources */,
 				18FC14AA192CE048003E2265 /* UIAlertView+AutoDismissWithBlocks.m in Sources */,
-				1860EE09193E8D6C006FDC9E /* EADefaultLogger.m in Sources */,
 				18FC14AB192CE048003E2265 /* NSDate+Utilities.m in Sources */,
 				18FC14AC192CE048003E2265 /* EAAppDelegate+ConfigureServices.m in Sources */,
 				18FC14AD192CE048003E2265 /* UIAlertView+Blocks.m in Sources */,
-				1860EE13193EA137006FDC9E /* EATestFlightLogger.m in Sources */,
 				18C5CB43192E54C70027FAF0 /* EATitleValueCell.m in Sources */,
 				18FC14B2192CE048003E2265 /* EADeepLinking.m in Sources */,
+				187A827A1945F84600C28C57 /* EATestFlightLogger.m in Sources */,
 				18FC14B3192CE048003E2265 /* EAResponseEntity.m in Sources */,
+				187A82781945F84600C28C57 /* EALogs.m in Sources */,
+				187A82721945F84600C28C57 /* EAGoogleAnalyticsLogger.m in Sources */,
 				18FC14B4192CE048003E2265 /* EAMappingsManager.m in Sources */,
+				187A82681945F84600C28C57 /* EAAnalytics.m in Sources */,
 				7BBF986C193CBA4D0016C5A4 /* EAFlurryAnalytics.m in Sources */,
-				1860EE07193E8D6C006FDC9E /* EACrashlyticsLogger.m in Sources */,
 				18A1E0AD193B3B9800724097 /* EALoginView.m in Sources */,
 				18FC14B5192CE048003E2265 /* EAConstants.m in Sources */,
-				1860EE0D193E8D6C006FDC9E /* EALogsConstants.m in Sources */,
 				18FC14B7192CE048003E2265 /* EAUtils.m in Sources */,
 				18FC14B8192CE048003E2265 /* NSArray+UITextField.m in Sources */,
 				18FC14B9192CE048003E2265 /* EANavigationController.m in Sources */,
 				18FC14BA192CE048003E2265 /* EAViewController.m in Sources */,
+				187A826A1945F84600C28C57 /* EABaseLevelMessageLogger.m in Sources */,
 				18FC14BB192CE048003E2265 /* EAAppDelegate.m in Sources */,
 				18FC14BC192CE048003E2265 /* UIColor+EAAddition.m in Sources */,
 				18FC14BD192CE048003E2265 /* main.m in Sources */,
 				18FC14BF192CE048003E2265 /* NSString+EAAdditions.m in Sources */,
 				18FC14F5192CEB6A003E2265 /* EABookingMainViewController.m in Sources */,
 				7BBF986E193CBA4D0016C5A4 /* EAGoogleAnalytics.m in Sources */,
+				187A82761945F84600C28C57 /* EALoggingConstants.m in Sources */,
 				18FC14C1192CE048003E2265 /* EAProtocolUtils.m in Sources */,
 				18FC14C3192CE048003E2265 /* EAPair.m in Sources */,
 				7BBF985B193CBA410016C5A4 /* EAFontManager.m in Sources */,
@@ -982,11 +1034,13 @@
 				18FC14C7192CE048003E2265 /* EAUIUtils.m in Sources */,
 				18FC14FA192CEC15003E2265 /* EAFloorMainViewController.m in Sources */,
 				7BBF9868193CBA4D0016C5A4 /* EAAnalytics.m in Sources */,
+				187A82741945F84600C28C57 /* EALevelLogger.m in Sources */,
 				18FC14C8192CE048003E2265 /* EAProtocolConstants.m in Sources */,
+				187A826C1945F84600C28C57 /* EACrashlyticsLogger.m in Sources */,
 				18FC14C9192CE048003E2265 /* Template.m in Sources */,
-				1860EE0B193E8D6C006FDC9E /* EALogs.m in Sources */,
 				18FC14CA192CE048003E2265 /* EATableViewController.m in Sources */,
 				18FC14CC192CE048003E2265 /* EAResourceManager.m in Sources */,
+				187A826E1945F84600C28C57 /* EADefaultLogger.m in Sources */,
 				18FC14FF192CEC7B003E2265 /* EABookMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

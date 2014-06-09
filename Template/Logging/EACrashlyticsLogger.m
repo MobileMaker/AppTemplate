@@ -9,55 +9,87 @@
 #import "EACrashlyticsLogger.h"
 #import <Crashlytics/Crashlytics.h>
 
+NSString* const kCrashlyticsKey      = @"f70a373c1fd4603a71ef861ec7ccc2b82284af1e";
 
 @implementation EACrashlyticsLogger
 
--(instancetype)init
++(instancetype)shared
 {
-    return [self initWithParameters:nil];
+    static dispatch_once_t pred;
+    static EACrashlyticsLogger* sharedInstance = nil;
+    
+    // Instantiate singleton on first request
+    dispatch_once(&pred, ^
+    {
+        NSLog(@"Initialize '%@' logger", kCrashlyticsLoggerName);
+        sharedInstance = [EACrashlyticsLogger new];
+    });
+    
+    return sharedInstance;
 }
 
--(instancetype)initWithParameters:(NSDictionary*)params
+-(instancetype)init
 {
     if (self = [super init])
     {
-        if (params)
-        {
-            [self addLoggerParameters:params];
-        }
+        self.logLevelCheckingPolicy = EALogLevelCheckingPolicyYESNO;
+        self.logLevel = EALogLevelTrace;
     }
     
     return self;
 }
 
--(NSString*)loggerName
++(instancetype)startWithLogLevel:(EALogLevel)logLevel parameters:(NSDictionary*)params
+{
+    static dispatch_once_t pred;
+    
+    EACrashlyticsLogger* logger = [EACrashlyticsLogger shared];
+    
+    dispatch_once(&pred, ^
+    {
+        [Crashlytics startWithAPIKey:kCrashlyticsKey];
+        
+        [logger setLogLevel:logLevel];
+        if (params)
+        {
+            [logger addLoggerParameters:params];
+        }
+    });
+    
+    return logger;
+}
+
+-(NSString*)name
 {
     return kCrashlyticsLoggerName;
+}
+
+-(EALogCapabilities)capabilities
+{
+    return EALogCapabilityCanReportCrashes | EALogCapabilityReportsCrashes;
 }
 
 #pragma mark - Logging
 
 -(void)addLoggerParameters:(NSDictionary*)params
 {
-    NSAssert(params, @"Nil logger add params");
-    
-    NSString* userId = (NSString*)[params objectForKey:kPropTrackerUserId];
+    NSString* userId = (NSString*)[params objectForKey:kPropLoggerUserId];
     if (userId && [userId isKindOfClass:[NSString class]])
         [Crashlytics setUserIdentifier:userId];
     
-    NSString* userName = (NSString*)[params objectForKey:kPropTrackerUserName];
+    NSString* userName = (NSString*)[params objectForKey:kPropLoggerUserName];
     if (userName && [userName isKindOfClass:[NSString class]])
         [Crashlytics setUserName:userName];
     
-    NSString* userEmail = (NSString*)[params objectForKey:kPropTrackerEmail];
+    NSString* userEmail = (NSString*)[params objectForKey:kPropLoggerEmail];
     if (userEmail && [userEmail isKindOfClass:[NSString class]])
         [Crashlytics setUserEmail:userEmail];
     
     // Remove already used params and add other as cusotm
     NSMutableDictionary* otherParams = [params mutableCopy];
-    [otherParams removeObjectForKey:kPropTrackerUserId];
-    [otherParams removeObjectForKey:kPropTrackerUserName];
-    [otherParams removeObjectForKey:kPropTrackerEmail];
+    [otherParams removeObjectForKey:kPropLoggerUserId];
+    [otherParams removeObjectForKey:kPropLoggerUserName];
+    [otherParams removeObjectForKey:kPropLoggerEmail];
     
     // Add rest params as custom
     for (NSString* key in otherParams.allKeys)
@@ -69,15 +101,13 @@
 
 -(void)removeLoggerParameters:(NSArray *)params
 {
-    NSAssert(params, @"Nil logger remove params");
-    
     for (NSString* param in params)
     {
-        if ([param isEqualToString:kPropTrackerUserId])
+        if ([param isEqualToString:kPropLoggerUserId])
             [Crashlytics setUserIdentifier:nil];
-        else if ([param isEqualToString:kPropTrackerUserName])
+        else if ([param isEqualToString:kPropLoggerUserName])
             [Crashlytics setUserName:nil];
-        else if ([param isEqualToString:kPropTrackerEmail])
+        else if ([param isEqualToString:kPropLoggerEmail])
             [Crashlytics setUserEmail:nil];
         else
             [Crashlytics setObjectValue:nil forKey:param];
@@ -93,17 +123,19 @@
 
 -(void)log:(NSString*)message
 {
-    NSAssert(message, @"Nil message");
-    
     CLSLog(message, nil);
 }
 
--(void)logWithFormat:(NSString*)format arguments:(va_list)argList
+-(void)logException:(NSException*)exception message:(NSString*)message withParameters:(NSDictionary*)params
 {
-    NSAssert(format, @"Nil format");
-    
-    NSString* message = [[NSString alloc] initWithFormat:format arguments:argList];
-    CLSLog(message, nil);
+    NSString* logMessage = [NSString stringWithFormat:@"message:%@, exception:%@", message ? message : @"<none>", exception];
+    [self log:logMessage logLevel:EALogLevelCritical];
+}
+
+-(void)logError:(NSError*)error message:(NSString*)message withParameters:(NSDictionary*)params
+{
+    NSString* logMessage = [NSString stringWithFormat:@"message:%@, exception:%@", message ? message : @"<none>", error];
+    [self log:logMessage logLevel:EALogLevelError];
 }
 
 @end
