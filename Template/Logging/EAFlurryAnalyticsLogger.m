@@ -135,7 +135,7 @@ NSString* const kFlurryKey      = @"2ZBMBBS36JZSVJTJVXR4";
 
 -(void)logError:(NSError*)error message:(NSString*)message withParameters:(NSDictionary*)params
 {
-    [Flurry logError:[NSString stringWithFormat:@"%@:%u", error.domain, error.code] message:message error:error];
+    [Flurry logError:[NSString stringWithFormat:@"%@:%d", error.domain, error.code] message:message error:error];
 }
 
 -(void)logException:(NSException*)exception message:(NSString*)message withParameters:(NSDictionary*)params
